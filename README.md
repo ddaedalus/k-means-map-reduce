@@ -10,8 +10,12 @@ hadoop fs -put ./yellow_tripdata_1m.csv hdfs://master:9000/yellow_tripdata_1m.cs
 ```
 pip install pyspark
 ```
-3. Submit task in Spark environment  
+3. Submit task in Spark environment   
 ```
 spark-submit map_reduce_kmeans.py
 ```
-
+4. Get Results  
+```
+hadoop fs -getmerge hdfs://master:9000/map_reduce_kmeans.res ./map_reduce_kmeans.res
+cat map_reduce_kmeans.res 
+```
