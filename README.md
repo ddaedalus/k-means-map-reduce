@@ -1,4 +1,4 @@
-## advanced-databases-ntua
+## advanced-databases-ntua: MapReduce, PySpark, HDFS, K-Means
 An ML system developed with PySpark and MapReduce, that reads from HDFS a dataset of trip records from all trips completed in yellow taxis in NYC from January to June in 2015, and finds the coordinates of the top five client-pickup locations using K-Means clustering.  
 
 ## How to run
@@ -12,6 +12,6 @@ pip install pyspark
 ```
 3. Submit task in Spark environment  
 ```
-spark-submit kmeans.py
+spark-submit map_reduce_kmeans.py
 ```
 
